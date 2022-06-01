@@ -1,0 +1,140 @@
+.content{
+    width: 100%;
+    background-color: #D9BEAB;
+    overflow: hidden;
+}
+.contentBox{
+    width: 80%;
+    margin: auto;
+}
+.banner_con{
+    width: 100%;
+    background: url("../img/img1.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.banner{
+    width: 100%;
+    background-color: rgba(217,190,171,0.5);
+    padding: 15rem 0 15rem 0;
+    border-bottom: 1px solid #B08E7F;
+}
+.banner_title{
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #72463E;
+}
+.cartCon{
+    width: 100%;
+    padding: 6rem 0 8rem 0;
+    border-bottom: 1px solid #72463E;
+    border-top: 1px solid #72463E;
+    margin-bottom: 8rem;
+}
+.cart_shop{
+    width: 70%;
+    margin: auto;
+}
+.cart_top{
+    width: 100%;
+    padding-bottom: 6rem;
+    border-bottom: 1px dashed #947561;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+.cart_top>div{
+    width: 40%;
+}
+.cart_top>div>img{
+    width: 100%;
+}
+.right_cart{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.right_cart>div{
+    color: #72463E;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.right_text>input{
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 5rem;
+    border-radius: 5px;
+    height: 2rem;
+    margin-left: 3rem;
+}
+.cart_bottom{
+    color: #72463E;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: right;
+}
+.cart_bottom{
+    padding-top: 5rem;
+}
+.cart_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cart_btn>div{
+    width: 40%;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 50px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.cart_btn_left{
+    background-color: #EBD6BB;
+    color: #72463E;
+    box-shadow: 0px 5px 5px #A17C6F inset;
+}
+.cart_btn_right{
+    color: #EBD6BB;
+    background-color: #72463E;
+}
+@media screen and (max-width: 960px){
+    .contentBox{
+        width: 90%;
+        margin: auto;
+    }
+    .cart_shop{
+        width: 80%;
+    }
+    .cart_btn{
+        margin-top: 3rem;
+    }
+    .cart_top>div{
+        width: 48%;
+    }
+    .cart_btn>div{
+        width: 60%;
+        margin: 1rem auto;
+    }
+}
+@media screen and (max-width: 760px){
+    .contentBox{
+        width: 95%;
+        margin: auto;
+    }
+    .cart_top>div{
+        width: 49%;
+    }
+    .cart_btn>div{
+        width: 80%;
+        margin: 1rem auto;
+    }
+}

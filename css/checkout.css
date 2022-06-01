@@ -1,0 +1,253 @@
+.content{
+    width: 100%;
+    background-color: #D9BEAB;
+    overflow: hidden;
+}
+.contentBox{
+    width: 80%;
+    margin: auto;
+}
+.banner_con{
+    width: 100%;
+    background: url("../img/img1.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.banner{
+    width: 100%;
+    background-color: rgba(217,190,171,0.5);
+    padding: 15rem 0 15rem 0;
+    border-bottom: 1px solid #B08E7F;
+}
+.banner_title{
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #72463E;
+}
+.formBox{
+    width: 100%;
+    padding: 6rem 0;
+    border-bottom: 1px solid #72463E;
+    border-top: 1px solid #72463E;
+    margin-bottom: 8rem;
+}
+.formBoxCon{
+    width: 80%;
+    margin: auto;
+}
+.eleList{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4rem 1fr 4rem 1fr 4rem;
+    align-items: center;
+    justify-content: center;
+}
+.ele{
+    height: 4rem;
+    background-color: #EAD7BA;
+    border-radius: 100%;
+}
+.line{
+    height: 1px;
+    background-color: #72463E;
+}
+.eleActive{
+    background-color: #72463E !important;
+}
+.formBottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+}
+.formBottom>div{
+    width: 45%;
+}
+.form_left{
+    padding: 3rem 4rem;
+    box-sizing: border-box;
+    border: 1px #72463E dashed;
+}
+.sm_title{
+    font-size: 3rem;
+    color: #72463E;
+    font-weight: 600;
+    text-align: center;
+}
+.left_img{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.left_img_img{
+    width: 35%;
+}
+.left_img_img>img{
+    width: 100%;
+}
+.left_img_text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: #72463E;
+    font-weight: 600;
+}
+.left_bottom{
+    font-size: 2rem;
+    color: #72463E;
+    font-weight: 600;
+    margin-top: 3rem;
+    width: 60%;
+    /*margin-right: 0;*/
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    clear: both;
+}
+.right_title{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    margin: 1.5rem 0;
+    text-transform: uppercase;
+    color: #72463E;
+}
+.ipt_inputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ipt_inputs>input{
+    width: 48%;
+    border: none;
+    outline: none;
+    height: 2.5rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+.ipt_ipt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ipt_ipt>input{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 3rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+.ipt_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+.ipt_btn>div{
+    width: 45%;
+    text-align: center;
+    padding: 0.8rem 0;
+    border-radius: 50px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn_left{
+    background-color: #EBD6BB;
+    color: #72463E;
+    box-shadow: 0px 5px 5px #A17C6F inset;
+}
+.btn_right{
+    color: #EBD6BB;
+    background-color: #72463E;
+}
+.btn_right>a{
+    color: #947561;
+    text-decoration: none;
+}
+.form_right1{
+    display: block;
+}
+.form_right2{
+    display: none;
+}
+.form_right3{
+    display: none;
+}
+.right_btn_ipt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right_btn{
+    width: 30%;
+    text-align: center;
+    padding: 0.8rem 0;
+    border-radius: 50px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #72463E;
+    background-color: #EBD6BB;
+    box-shadow: 0px 5px 5px #A17C6F inset;
+}
+.btnActive{
+    background-color: #72463E !important;
+    color: #EBD6BB !important;
+}
+.right_btn_ipt>input{
+    width: 65%;
+    border: none;
+    outline: none;
+    height: 3rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+@media screen and (max-width: 960px){
+    .contentBox{
+        width: 90%;
+        margin: auto;
+    }
+    .cart_shop{
+        width: 80%;
+    }
+    .formBoxCon{
+        width: 90%;
+    }
+    .right_btn{
+        width: 40%;
+    }
+    .right_btn_ipt>input{
+        width: 55%;
+    }
+}
+@media screen and (max-width: 760px){
+    .contentBox{
+        width: 95%;
+        margin: auto;
+    }
+    .formBottom>div{
+        width: 80%;
+        margin:2rem auto;
+    }
+    .formBoxCon{
+        width: 95%;
+    }
+
+}

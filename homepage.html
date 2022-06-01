@@ -1,0 +1,163 @@
+<!doctype html>
+<!-- The lang attribute specifies the language of the content, where the attribute value en is short for English-->
+<html lang="en">
+	<head>
+		<!-- UTF-8 is a variable-width character -->
+		<meta charset="UTF-8">
+		<meta name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- Website title -->
+		<title>Home</title>
+		<!-- Link external css -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/homepage.css">
+	</head>
+	<body>
+		<header>
+			<!--The <a> tag defines the hyperlink used to link the current page to the homepage.html page -->
+			<a href="homepage.html" class="headerLogo">
+				<img src="img/logo.png" />
+			</a>
+			<!-- Create class selector -->
+			<div class="header_right">
+				<!-- Insert pictures -->
+				<img src="./img/shop.png" alt="" class="shopImg">
+				<img src="./img/search.png" alt="" class="searchImg">
+			</div>
+		</header>
+		<nav>
+			<!-- The <label> tag defines a label for input element -->
+			<label for="toggle" class="hubBtn">
+				&#9776;
+			</label>
+			<!-- input box -->
+			<input type="checkbox" id="toggle">
+			<!-- Create class selector -->
+			<div class="menu">
+			    <!--The <a> tag defines the hyperlink used to link the current page to the homepage.html page -->
+				<div><a href="homepage.html">Home</a></div>
+				<!--The <a> tag defines the hyperlink used to link the current page to the store.html page-->
+				<div><a href="store.html">Store</a></div>
+				<div><a href="#">About Us</a></div>
+				<div><a href="#">Content Us</a></div>
+				<div><a href="#">T&C</a></div>
+				<div><a href="#">Login</a></div>
+			</div>
+		</nav>
+		<!-- Create class selector -->
+		<div class="content">
+			<div class="contentBox">
+				<div class="banner">
+					<div>
+						<div class="banner_title">
+							Games For All The <br>Family!
+						</div>
+						<div class="banner_text">
+							You'll find a great selection here - the latest releases from NZ based SchilMil Games,
+							Cheeky Parrot Games, other NZ designers, and selected games from overseas publishers.
+						</div>
+						<div class="banner_btn" onclick="goStore()">SHOP NOW</div>
+					</div>
+					<div>
+						<!-- Insert pictures -->
+						<img src="./img/img1.png" alt="">
+					</div>
+				</div>
+				<!-- Create class selector -->
+				<div class="sale">
+					<div class="title">On Sale</div>
+					<div class="sale_shop_list">
+						<div class="shop">
+							<!-- Insert pictures -->
+							<img src="img/img0.jpg" />
+							<div class="shopText">
+								<div class="shopName">Gift set card games - series 2</div>
+								<del>NZ$ 73.85</del>
+								<div class="shopName">NZ$ 64.95</div>
+							</div>
+							<!-- Set click event -->
+							<div class="shopBtn" onclick="goStore1()">VIEW</div>
+						</div>
+						<!-- Create class selector -->
+						<div class="shop">
+							<img src="img/onsale1.jpg" />
+							<div class="shopText">
+								<div class="shopName">AuZtralia Big Box</div>
+								<div class="shopName">NZ$ 119.95</div>
+							</div>
+							<div class="shopBtn">VIEW</div>
+						</div>
+						<!-- Create class selector -->
+						<div class="shop">
+							<!-- Insert pictures -->
+							<img src="img/onsale2.jpg" />
+							<div class="shopText">
+								<div class="shopName">Gift set of board games</div>
+								<del>NZ$ 94.85</del>
+								<div class="shopName">NZ$ 85.95</div>
+							</div>
+							<div class="shopBtn">VIEW</div>
+						</div>
+						<!-- Create class selector -->
+						<div class="shop">
+							<!-- Insert pictures -->
+							<img src="img/onsale3.jpg" />
+							<div class="shopText">
+								<div class="shopName">Gift set card games - series 1</div>
+								<!-- The <del> tag instantiates a section of text with deleted sections and newly inserted sections -->
+								<del>NZ$ 68.00</del>
+								<div class="shopName">NZ$ 59.95</div>
+							</div>
+							<div class="shopBtn">VIEW</div>
+						</div>
+					</div>
+					<!-- Set click event -->
+					<div class="viewAll" onclick="goStore()">
+						VIEW ALL PRODUCTS
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div>
+				<!-- The <p> tag defines a paragraph-->
+				<p>SchilMil Games Ltd. <br>
+					11 Peregrine Place, Birkenhead 0626 Auckland, New Zealand</p>
+				<p>+6409480 7010</p>
+				<p>Email Amanda</p>
+				<p>facebook.com/schilmil</p>
+				<p>instagram.com/schilmi</p>
+			</div>
+			<div>
+				<!-- The <p> tag defines a paragraph-->
+				<p>EXPLORE</p>
+				<p>PRODUCT SEARCH</p>
+				<p>BOARDGAMEGEEK</p>
+				<p>CONTACT US</p>
+				<p>TERMS AND CONDITIONS</p>
+			</div>
+			<div class="footerLink">
+				<!-- Insert pictures -->
+				<div><img src="img/foot1.png" /></div>
+				<div><img src="img/foot2.png" /></div>
+				<div><img src="img/foot3.png" /></div>
+				<div><img src="img/foot4.png" /></div>
+				<div><img src="img/foot5.png" /></div>
+			</div>
+		</footer>
+		<!-- Link external js -->
+		<script src="js/head.js"></script>
+        <script>
+			// Click on event to jump to store.html page
+			function goStore() {
+				window.location.href = 'store.html'
+			}
+			// Click on event to jump to store1.html page
+			function goStore1() {
+				window.location.href = 'store1.html'
+			}
+		</script>
+	</body>
+</html>
+

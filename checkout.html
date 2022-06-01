@@ -1,0 +1,211 @@
+<!doctype html>
+<!-- The lang attribute specifies the language of the content, where the attribute value en is short for English-->
+<html lang="en">
+	<head>
+		<!-- UTF-8 is a variable-width character -->
+		    <meta charset="UTF-8">
+		    <meta name="viewport"
+			    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		    <title>Document</title>
+		    <!-- Link external css -->
+		    <link rel="stylesheet" href="css/style.css">
+		    <link rel="stylesheet" href="css/checkout.css">
+	</head>
+	<body>
+		    <header>
+			    <!--The <a> tag defines the hyperlink used to link the current page to the homepage.html page -->
+					 <!--Insert pictures-->
+				    <img src="img/logo.png" />
+			    </a>
+			    <!-- Create class selector -->
+			    <div class="header_right">
+				    <img src="./img/shop.png" alt="" class="shopImg">
+				    <img src="./img/search.png" alt="" class="searchImg">
+			    </div>
+		    </header>
+		    <nav>
+			    <!-- The <label> tag defines a label for input element -->
+			    <label for="toggle" class="hubBtn">
+				    &#9776;
+			    </label>
+			    <!-- input box-->
+			    <input type="checkbox" id="toggle">
+			    <!-- Create class selector -->
+			    <div class="menu">
+				    <!--The <a> tag defines the hyperlink used to link the current page to the homepage.html page -->
+				    <div><a href="homepage.html">Home</a></div>
+				    <!--The <a> tag defines the hyperlink used to link the current page to the store.html page-->
+				    <div><a href="store.html">Store</a></div>
+				    <div><a href="#">About Us</a></div>
+				    <div><a href="#">Content Us</a></div>
+				    <div><a href="#">T&C</a></div>
+				    <div><a href="#">Login</a></div>
+			    </div>
+		    </nav>
+		    <!-- Create class selector -->
+		    <div class="content">
+			    <div class="contentBox">
+				    <div class="banner_con">
+					    <div class="banner">
+						    <div class="banner_title">Checkout</div>
+					    </div>
+				    </div>
+				    <!-- Create class selector -->
+				    <div class="formBox">
+					    <div class="formBoxCon">
+						    <div class="eleList">
+							    <div class="ele eleActive"></div>
+							    <div class="line"></div>
+							    <div class="ele"></div>
+							    <div class="line"></div>
+							    <div class="ele"></div>
+						    </div>
+						    <!-- Create class selector -->
+						    <div class="formBottom">
+							    <div class="form_left">
+								    <div class="sm_title">Order Preview</div>
+								    <div class="left_img">
+									    <div class="left_img_img"><img src="img/img0.jpg" /></div>
+									    <div class="left_img_text">
+										    <p>Gift Set Card Games - Series 2</p>
+										    <p style="display: flex;justify-content: space-between;"><span>Quantity</span>
+											    <span>1</span>
+										    </p>
+									    </div>
+									    </div>
+								  	    <div class="left_bottom"><span>Total</span> <span>NZ$ 64.95</span><!-- 行内元素 -->
+								 	    </div>
+								    </div>
+								    <!-- Create class selector -->
+								    <div class="form_right1">
+									    <div class="title">Customer Details</div>
+									    <div class="right_title">NAME</div>
+									    <div class="ipt_inputs">
+										    <!-- Thhe placeholder attribute specifies a short hint that describes the expected value of an input field  -->
+										    <input type="text" placeholder="first name">
+										    <input type="text" placeholder="last name">
+									    </div>
+									    <div class="right_title">Email</div>
+									    <div class="ipt_ipt">
+										    <!-- The placeholder attribute specifies a short hint that describes the expected value of an input field  -->
+										    <input type="email" placeholder="enter your email adress">
+									    </div>
+									    <div class="right_title">Phone</div>
+									    <div class="ipt_ipt">
+										    <!-- The placeholder attribute specifies a short hint that describes the expected value of an input field  -->
+										    <input type="tel" placeholder="enter your phone number">
+									    </div>
+									    <div class="ipt_btn">
+										    <!-- Set the selector click event link() -->
+										    <div class="btn_left" onclick="link()">BACK</div>
+										    <!-- Set the selector click event clickGo1() -->
+										    <div class="btn_right" onclick="clickGo1()">NEXT</div>
+									    </div>
+								    </div>
+								    <!-- Create class selector -->
+								    <div class="form_right2">
+									    <div class="title">Address</div>
+									    <div class="right_title">street adDress</div>
+									    <div class="ipt_ipt">
+										    <!-- Text field -->
+										    <input type="text">
+									    </div>
+									    <div class="right_title">District</div>
+									    <div class="ipt_ipt">
+										    <!-- Text field-->
+										    <input type="text">
+									    </div>
+									    <div class="right_title">State</div>
+									    <div class="ipt_ipt">
+										    <input type="text">
+									    </div>
+									    <div class="right_title">Postcood</div>
+									    <div class="ipt_ipt">
+										    <!-- Text field -->
+										    <input type="text">
+									    </div>
+									    <div class="ipt_btn">
+										    <!-- Set the selector click event clickBank2() -->
+										    <div class="btn_left" onclick="clickBank2()">BACK</div>
+										    <!-- Set the selector click event clickGo2() -->
+										    <div class="btn_right" onclick="clickGo2()">NEXT</div>
+									    </div>
+								    </div>
+								    <!-- Create class selector -->
+								    <div class="form_right3">
+									    <div class="title">Payment</div>
+									    <div class="right_title">card number</div>
+									    <div class="right_btn_ipt">
+										    <div class="right_btn btnActive">Visa</div>
+										    <input type="text" placeholder="*** *** ***">
+									    </div>
+									    <div class="right_title">name on card</div>
+									    <div class="right_btn_ipt">
+										    <div class="right_btn">Mastercard</div>
+										    <!-- The placeholder attribute specifies a short hint that describes the expected value of an input field -->
+										    <input type="text" placeholder="enter your name on card">
+									    </div>
+									    <div class="right_title">expiry date</div>
+									    <div class="right_btn_ipt">
+										    <div class="right_btn">Paypal</div>
+										    <!-- The placeholder attribute specifies a short hint that describes the expected value of an input field -->
+										    <input type="text" placeholder="MM/YY">
+									    </div>
+									    <div class="right_title">SECURITY CODE</div>
+									    <div class="right_btn_ipt">
+										    <div class="right_btn">Stripe</div>
+										    <!-- The placeholder attribute specifies a short hint that describes the expected value of an input field -->
+										    <input type="text" placeholder="CVN">
+									    </div>
+									    <div class="ipt_btn">
+										    <!-- Set the selector click event clickBank3() -->
+										    <div class="btn_left" onclick="clickBank3()">BACK</div>
+										    <!--The <a> tag defines the hyperlink used to link the current page to the payment.html page -->
+										    <div class="btn_right"><a href="payment.html">SUBMIT</a></div>
+									    </div>
+								    </div>
+							    </div>
+						    </div>
+					    </div>
+				    </div>
+			    </div>
+            <footer>
+		    <div>
+			    <!-- The <p> tag defines a paragraph-->
+			    <p>SchilMil Games Ltd. <br>
+				    11 Peregrine Place, Birkenhead 0626 Auckland, New Zealand</p>
+			    <p>+6409480 7010</p>
+			    <p>Email Amanda</p>
+			    <p>facebook.com/schilmil</p>
+			    <p>instagram.com/schilmi</p>
+		    </div>
+		    <div>
+			    <!-- The <p> tag defines a paragraph-->
+			    <p>EXPLORE</p>
+			    <p>PRODUCT SEARCH</p>
+			    <p>BOARDGAMEGEEK</p>
+			    <p>CONTACT US</p>
+			    <p>TERMS AND CONDITIONS</p>
+		    </div>
+		    <div class="footerLink">
+			    <!-- Insert pictures -->
+			    <div><img src="img/foot1.png" /></div>
+			    <div><img src="img/foot2.png" /></div>
+			    <div><img src="img/foot3.png" /></div>
+			    <div><img src="img/foot4.png" /></div>
+			    <div><img src="img/foot5.png" /></div>
+		    </div>
+        </footer>
+	    <!-- Link external js -->
+	    <script src="js/checkout.js"></script>
+	    <script src="js/head.js"></script>
+	    <script>
+			 // Click on event to jump to cart.html page
+		    function link() {
+			    window.location.href = 'cart.html'
+		    }
+	    </script>
+	</body>
+
+</html>

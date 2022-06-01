@@ -1,0 +1,90 @@
+.content{
+    width: 100%;
+    background-color: #D9BEAB;
+    overflow: hidden;
+}
+.contentBox{
+    width: 80%;
+    margin: auto;
+}
+.banner_con{
+    width: 100%;
+    background: url("../img/img1.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.banner{
+    width: 100%;
+    background-color: rgba(217,190,171,0.8);
+    padding: 4rem 0 8rem 0;
+    border-bottom: 1px solid #B08E7F;
+}
+.banner_title{
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #72463E;
+}
+.bannerLink{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.bannerLink>div{
+    width: 30%;
+}
+.bannerLink>div>a{
+    color: #72463E;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.linkActive{
+    color: black !important;
+}
+.leftLink{
+    text-align: right;
+}
+.centerLink{
+    text-align: center;
+}
+.rightLink{
+    text-align: left;
+}
+.shopList{
+    width: 100%;
+    padding: 5rem 0;
+    border-bottom: 1px solid #72463E;
+    margin-bottom: 5rem;
+}
+.storeShop{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+.storeShop>div{
+    width: 22%;
+    margin-bottom: 4rem;
+}
+@media screen and (max-width: 960px){
+    .contentBox{
+        width: 90%;
+        margin: auto;
+    }
+    .storeShop>div{
+        width: 48%;
+    }
+}
+@media screen and (max-width: 760px){
+    .contentBox{
+        width: 95%;
+        margin: auto;
+    }
+    .storeShop>div{
+        width: 100%;
+    }
+}

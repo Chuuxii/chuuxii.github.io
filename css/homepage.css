@@ -1,0 +1,112 @@
+.content{
+    width: 100%;
+    background-color: #D9BEAB;
+    overflow: hidden;
+}
+.contentBox{
+    width: 80%;
+    margin: auto;
+    padding: 0 0 8rem 0;
+}
+.banner{
+    width: 100%;
+    margin: 5rem 0;
+    border-bottom: 2px solid #72463E;
+    border-top: 2px solid #72463E;
+    padding: 5rem 1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.banner>div{
+    width: 46%;
+}
+.banner>div>img{
+    width: 100%;
+}
+.banner_title{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    color: #72463E;
+}
+.banner_text{
+    font-size: 1.8rem;
+    text-align: center;
+    color: #664135;
+    margin-top: 4rem;
+}
+.banner_btn{
+    margin: 4rem auto;
+    width: 50%;
+    padding: 2rem 0;
+    text-align: center;
+    border-radius: 5rem;
+    background-color: #EBD6BB;
+    color: #72463E;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0px 5px 5px #A17C6F inset;
+    box-sizing: border-box;
+}
+.sale{
+    width: 100%;
+    border-bottom: 2px solid #72463E;
+    padding-bottom: 4rem;
+}
+.sale_shop_list{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+.sale_shop_list>div{
+    width: 22%;
+}
+.viewAll{
+    margin: 10rem auto 3rem auto;
+    width: 50%;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-radius: 5rem;
+    background-color: #EBD6BB;
+    color: #72463E;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0px 8px 8px #A17C6F inset;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 960px){
+    .contentBox{
+        width: 90%;
+        margin: auto;
+    }
+    .banner{
+        display: block;
+    }
+    .banner>div{
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .sale_shop_list>div{
+        width: 48%;
+        margin: 2rem 0;
+    }
+}
+@media screen and (max-width: 760px){
+    .contentBox{
+        width: 95%;
+        margin: auto;
+    }
+    .sale_shop_list>div{
+        width: 100%;
+        margin: 2rem 0;
+    }
+}
